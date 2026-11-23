@@ -1,0 +1,5 @@
+reference,encoder,stratum,n,ref_reachable,reachable,newly_reachable,lost_reachability,proposed_set_count_changed
+qwen_plain,qwen_instruct,all,2744,2568,2605,88,51,2082
+qwen_plain,qwen_instruct,unseen_combination,1223,1047,1084,88,51,934
+qwen_plain,e5,all,2744,2568,2616,92,44,2086
+qwen_plain,e5,unseen_combination,1223,1047,1095,92,44,911

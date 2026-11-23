@@ -1,0 +1,34 @@
+{
+ "files": {
+  "data.zip": {
+   "url": "https://aclanthology.org/attachments/2024.findings-emnlp.140.data.zip",
+   "sha256": "89ec7bd4fbd889b124100212c4838fadb91b2dd2932a0aa981095b6e8f8377fa",
+   "bytes": 13128387
+  },
+  "crosswoz_train.zip": {
+   "url": "https://raw.githubusercontent.com/thu-coai/CrossWOZ/df82c9fdff91b9b130f2d6b89110d3870ba6260e/data/crosswoz/train.json.zip",
+   "sha256": "b81f6a0845011bb4593d21dd58e2d76af4dd5d52e300ecc68cb8dee17ccc3cf8",
+   "bytes": 13624132
+  },
+  "spider.train.parquet": {
+   "url": "https://huggingface.co/datasets/xlangai/spider/resolve/0c350918f3f29ec754f1181c65cdce76cd6c133c/spider/train-00000-of-00001.parquet",
+   "sha256": "cb4b681558f6f8f428e516fb94c5a1cb19c5a0a0c153c0618c8cc4a28115d4cb",
+   "bytes": 831359
+  },
+  "break.train.csv": {
+   "url": "https://raw.githubusercontent.com/allenai/Break/cef3ed359754e5b0942bb1f90e6b12586898d593/break_dataset/QDMR/train.csv",
+   "sha256": "b51ef9467ff387204cf5b4c85ed39c1b5c5c08f007782f6eb3c596ef1bd4093a",
+   "bytes": 12246301
+  }
+ },
+ "weights": {
+  "config.json": "b5bf1f51fc45be473a54718cef92448d90a1be001bf9b9a44b8c7f10a19feaa9",
+  "merges.txt": "8831e4f1a044471340f7c0a83d7bd71306a5b867e95fd870f74d0c5308a904d5",
+  "model.safetensors": "0437e45c94563b09e13cb7a64478fc406947a93cb34a7e05870fc8dcd48e23fd",
+  "tokenizer.json": "def76fb086971c7867b829c23a26261e38d9d74e02139253b38aeb9df8b4b50a",
+  "tokenizer_config.json": "253153d0738ceb4c668d2eff957714dd2bea0b56de772a9fdccd96cbf517e6a0",
+  "vocab.json": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910"
+ },
+ "model": "Qwen/Qwen3-Embedding-0.6B",
+ "weight_revision": "97b0c614be4d77ee51c0cef4e5f07c00f9eb65b3"
+}

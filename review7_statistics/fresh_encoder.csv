@@ -1,0 +1,5 @@
+population,method,n,changed_masks,archived_hits,plain_hits,fixes,harms,delta_pp
+all,inverse,2744,29,1698,1697,6,7,-0.03644314868804788
+all,fixed_size,2744,8,1636,1635,2,3,-0.03644314868804788
+unseen,inverse,1223,13,612,611,2,3,-0.08176614881438837
+unseen,fixed_size,1223,1,509,509,0,0,0.0

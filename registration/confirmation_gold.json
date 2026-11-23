@@ -1,0 +1,1057 @@
+{
+ "SPIDER_train_1174": [
+  "aggregate",
+  "select"
+ ],
+ "SPIDER_train_1175": [
+  "project",
+  "select",
+  "sort"
+ ],
+ "SPIDER_train_1176": [
+  "project",
+  "select",
+  "union"
+ ],
+ "SPIDER_train_1177": [
+  "aggregate",
+  "project",
+  "select",
+  "union"
+ ],
+ "SPIDER_train_1178": [
+  "project",
+  "select",
+  "union"
+ ],
+ "SPIDER_train_1179": [
+  "comparative",
+  "project",
+  "select"
+ ],
+ "SPIDER_train_1180": [
+  "comparative",
+  "project",
+  "select",
+  "union"
+ ],
+ "SPIDER_train_1181": [
+  "project",
+  "select",
+  "union"
+ ],
+ "SPIDER_train_1182": [
+  "aggregate",
+  "comparative",
+  "project",
+  "select"
+ ],
+ "SPIDER_train_1183": [
+  "group",
+  "project",
+  "select",
+  "sort"
+ ],
+ "SPIDER_train_1184": [
+  "group",
+  "project",
+  "select",
+  "superlative"
+ ],
+ "SPIDER_train_1185": [
+  "project",
+  "select",
+  "sort"
+ ],
+ "SPIDER_train_1186": [
+  "aggregate",
+  "filter",
+  "group",
+  "project",
+  "select"
+ ],
+ "SPIDER_train_1187": [
+  "group",
+  "project",
+  "select",
+  "union"
+ ],
+ "SPIDER_train_1188": [
+  "group",
+  "project",
+  "select",
+  "superlative"
+ ],
+ "SPIDER_train_1189": [
+  "comparative",
+  "group",
+  "project",
+  "select"
+ ],
+ "SPIDER_train_1190": [
+  "comparative",
+  "group",
+  "project",
+  "select"
+ ],
+ "SPIDER_train_1191": [
+  "discard",
+  "project",
+  "select"
+ ],
+ "SPIDER_train_1192": [
+  "comparative",
+  "intersection",
+  "project",
+  "select"
+ ],
+ "SPIDER_train_1193": [
+  "aggregate",
+  "project",
+  "select"
+ ],
+ "SPIDER_train_1307": [
+  "aggregate",
+  "select"
+ ],
+ "SPIDER_train_1308": [
+  "project",
+  "select",
+  "sort"
+ ],
+ "SPIDER_train_1309": [
+  "project",
+  "select",
+  "union"
+ ],
+ "SPIDER_train_1310": [
+  "filter",
+  "project",
+  "select",
+  "union"
+ ],
+ "SPIDER_train_1311": [
+  "aggregate",
+  "project",
+  "select"
+ ],
+ "SPIDER_train_1312": [
+  "comparative",
+  "group",
+  "project",
+  "select"
+ ],
+ "SPIDER_train_1313": [
+  "group",
+  "project",
+  "select",
+  "union"
+ ],
+ "SPIDER_train_1314": [
+  "group",
+  "project",
+  "select",
+  "superlative"
+ ],
+ "SPIDER_train_1315": [
+  "comparative",
+  "group",
+  "project",
+  "select"
+ ],
+ "SPIDER_train_1316": [
+  "comparative",
+  "group",
+  "intersection",
+  "project",
+  "select"
+ ],
+ "SPIDER_train_1317": [
+  "project",
+  "select",
+  "union"
+ ],
+ "SPIDER_train_1318": [
+  "project",
+  "select",
+  "sort",
+  "union"
+ ],
+ "SPIDER_train_1319": [
+  "comparative",
+  "project",
+  "select"
+ ],
+ "SPIDER_train_1320": [
+  "project",
+  "select",
+  "sort",
+  "union"
+ ],
+ "SPIDER_train_1321": [
+  "filter",
+  "project",
+  "select"
+ ],
+ "SPIDER_train_2394": [
+  "aggregate",
+  "select"
+ ],
+ "SPIDER_train_2395": [
+  "aggregate",
+  "select"
+ ],
+ "SPIDER_train_2396": [
+  "group",
+  "project",
+  "select",
+  "superlative"
+ ],
+ "SPIDER_train_2397": [
+  "group",
+  "project",
+  "select",
+  "superlative"
+ ],
+ "SPIDER_train_2398": [
+  "aggregate",
+  "select"
+ ],
+ "SPIDER_train_2399": [
+  "aggregate",
+  "select"
+ ],
+ "SPIDER_train_2400": [
+  "project",
+  "select",
+  "superlative"
+ ],
+ "SPIDER_train_2401": [
+  "project",
+  "select",
+  "superlative"
+ ],
+ "SPIDER_train_2402": [
+  "project",
+  "select",
+  "sort",
+  "union"
+ ],
+ "SPIDER_train_2403": [
+  "project",
+  "select",
+  "sort",
+  "union"
+ ],
+ "SPIDER_train_2404": [
+  "aggregate",
+  "project",
+  "select"
+ ],
+ "SPIDER_train_2405": [
+  "filter",
+  "project",
+  "select"
+ ],
+ "SPIDER_train_2406": [
+  "project",
+  "select",
+  "sort"
+ ],
+ "SPIDER_train_2407": [
+  "project",
+  "select",
+  "sort"
+ ],
+ "SPIDER_train_2408": [
+  "aggregate",
+  "project",
+  "select",
+  "union"
+ ],
+ "SPIDER_train_2409": [
+  "aggregate",
+  "project",
+  "select",
+  "union"
+ ],
+ "SPIDER_train_2410": [
+  "filter",
+  "project",
+  "select",
+  "union"
+ ],
+ "SPIDER_train_2411": [
+  "comparative",
+  "project",
+  "select",
+  "union"
+ ],
+ "SPIDER_train_2412": [
+  "group",
+  "select",
+  "union"
+ ],
+ "SPIDER_train_2413": [
+  "group",
+  "project",
+  "select",
+  "union"
+ ],
+ "SPIDER_train_2414": [
+  "project",
+  "select",
+  "superlative",
+  "union"
+ ],
+ "SPIDER_train_2415": [
+  "comparative",
+  "project",
+  "select",
+  "union"
+ ],
+ "SPIDER_train_2416": [
+  "comparative",
+  "group",
+  "project",
+  "select"
+ ],
+ "SPIDER_train_2418": [
+  "group",
+  "project",
+  "select",
+  "superlative"
+ ],
+ "SPIDER_train_2419": [
+  "comparative",
+  "project",
+  "select"
+ ],
+ "SPIDER_train_2420": [
+  "discard",
+  "filter",
+  "project",
+  "select"
+ ],
+ "SPIDER_train_2421": [
+  "discard",
+  "project",
+  "select"
+ ],
+ "SPIDER_train_2422": [
+  "comparative",
+  "project",
+  "select"
+ ],
+ "SPIDER_train_2423": [
+  "comparative",
+  "project",
+  "select"
+ ],
+ "SPIDER_train_2424": [
+  "comparative",
+  "group",
+  "project",
+  "select"
+ ],
+ "SPIDER_train_2425": [
+  "aggregate",
+  "filter",
+  "select"
+ ],
+ "SPIDER_train_2426": [
+  "aggregate",
+  "project",
+  "select",
+  "union"
+ ],
+ "SPIDER_train_2427": [
+  "aggregate",
+  "project",
+  "select",
+  "union"
+ ],
+ "SPIDER_train_2428": [
+  "comparative",
+  "project",
+  "select",
+  "sort"
+ ],
+ "SPIDER_train_2429": [
+  "comparative",
+  "project",
+  "select",
+  "sort"
+ ],
+ "SPIDER_train_2430": [
+  "aggregate",
+  "comparative",
+  "project",
+  "select"
+ ],
+ "SPIDER_train_2431": [
+  "aggregate",
+  "comparative",
+  "project",
+  "select"
+ ],
+ "SPIDER_train_2432": [
+  "project",
+  "select"
+ ],
+ "SPIDER_train_2433": [
+  "project",
+  "select"
+ ],
+ "SPIDER_train_2802": [
+  "aggregate",
+  "select"
+ ],
+ "SPIDER_train_2803": [
+  "project",
+  "select",
+  "sort"
+ ],
+ "SPIDER_train_2804": [
+  "project",
+  "select",
+  "union"
+ ],
+ "SPIDER_train_2805": [
+  "filter",
+  "project",
+  "select",
+  "union"
+ ],
+ "SPIDER_train_2806": [
+  "aggregate",
+  "group",
+  "project",
+  "select"
+ ],
+ "SPIDER_train_2807": [
+  "aggregate",
+  "project",
+  "select",
+  "superlative"
+ ],
+ "SPIDER_train_2808": [
+  "group",
+  "project",
+  "select",
+  "union"
+ ],
+ "SPIDER_train_2809": [
+  "project",
+  "select"
+ ],
+ "SPIDER_train_2810": [
+  "comparative",
+  "intersection",
+  "project",
+  "select"
+ ],
+ "SPIDER_train_2811": [
+  "project",
+  "select",
+  "sort",
+  "union"
+ ],
+ "SPIDER_train_2812": [
+  "project",
+  "select",
+  "union"
+ ],
+ "SPIDER_train_2813": [
+  "project",
+  "select",
+  "sort",
+  "union"
+ ],
+ "SPIDER_train_2814": [
+  "project",
+  "select",
+  "union"
+ ],
+ "SPIDER_train_2815": [
+  "aggregate",
+  "comparative",
+  "project",
+  "select"
+ ],
+ "SPIDER_train_2816": [
+  "comparative",
+  "discard",
+  "group",
+  "project",
+  "select"
+ ],
+ "SPIDER_train_2817": [
+  "aggregate",
+  "project",
+  "select",
+  "union"
+ ],
+ "SPIDER_train_2818": [
+  "group",
+  "project",
+  "select",
+  "union"
+ ],
+ "SPIDER_train_2819": [
+  "aggregate",
+  "comparative",
+  "group",
+  "project",
+  "select",
+  "union"
+ ],
+ "SPIDER_train_3711": [
+  "aggregate",
+  "comparative",
+  "project",
+  "select"
+ ],
+ "SPIDER_train_3712": [
+  "project",
+  "select",
+  "sort",
+  "union"
+ ],
+ "SPIDER_train_3713": [
+  "project",
+  "select",
+  "union"
+ ],
+ "SPIDER_train_3714": [
+  "aggregate",
+  "project",
+  "select",
+  "union"
+ ],
+ "SPIDER_train_3715": [
+  "aggregate",
+  "comparative",
+  "project",
+  "select"
+ ],
+ "SPIDER_train_3716": [
+  "comparative",
+  "project",
+  "select",
+  "union"
+ ],
+ "SPIDER_train_3717": [
+  "filter",
+  "project",
+  "select",
+  "union"
+ ],
+ "SPIDER_train_3718": [
+  "comparative",
+  "group",
+  "project",
+  "select",
+  "union"
+ ],
+ "SPIDER_train_3719": [
+  "comparative",
+  "group",
+  "project",
+  "select"
+ ],
+ "SPIDER_train_3720": [
+  "comparative",
+  "project",
+  "select",
+  "union"
+ ],
+ "SPIDER_train_3721": [
+  "aggregate",
+  "filter",
+  "project",
+  "select"
+ ],
+ "SPIDER_train_3722": [
+  "aggregate",
+  "discard",
+  "filter",
+  "select"
+ ],
+ "SPIDER_train_3723": [
+  "filter",
+  "project",
+  "select"
+ ],
+ "SPIDER_train_3724": [
+  "comparative",
+  "intersection",
+  "project",
+  "select"
+ ],
+ "SPIDER_train_3725": [
+  "comparative",
+  "project",
+  "select",
+  "union"
+ ],
+ "SPIDER_train_3726": [
+  "filter",
+  "project",
+  "select"
+ ],
+ "SPIDER_train_3727": [
+  "group",
+  "project",
+  "select",
+  "sort",
+  "union"
+ ],
+ "SPIDER_train_4096": [
+  "aggregate",
+  "filter",
+  "select"
+ ],
+ "SPIDER_train_4097": [
+  "group",
+  "project",
+  "select",
+  "sort"
+ ],
+ "SPIDER_train_4098": [
+  "project",
+  "select",
+  "union"
+ ],
+ "SPIDER_train_4099": [
+  "comparative",
+  "project",
+  "select",
+  "union"
+ ],
+ "SPIDER_train_4100": [
+  "aggregate",
+  "project",
+  "select",
+  "union"
+ ],
+ "SPIDER_train_4101": [
+  "project",
+  "select",
+  "superlative"
+ ],
+ "SPIDER_train_4102": [
+  "group",
+  "project",
+  "select",
+  "union"
+ ],
+ "SPIDER_train_4103": [
+  "comparative",
+  "group",
+  "project",
+  "select"
+ ],
+ "SPIDER_train_4104": [
+  "comparative",
+  "group",
+  "project",
+  "select"
+ ],
+ "SPIDER_train_4105": [
+  "filter",
+  "intersection",
+  "project",
+  "select"
+ ],
+ "SPIDER_train_4106": [
+  "project",
+  "select",
+  "union"
+ ],
+ "SPIDER_train_4107": [
+  "group",
+  "project",
+  "select",
+  "sort"
+ ],
+ "SPIDER_train_4108": [
+  "comparative",
+  "project",
+  "select"
+ ],
+ "SPIDER_train_4109": [
+  "group",
+  "project",
+  "select",
+  "union"
+ ],
+ "SPIDER_train_4110": [
+  "filter",
+  "project",
+  "select"
+ ],
+ "SPIDER_train_4111": [
+  "comparative",
+  "group",
+  "project",
+  "select",
+  "sort",
+  "union"
+ ],
+ "SPIDER_train_6599": [
+  "aggregate",
+  "select"
+ ],
+ "SPIDER_train_6600": [
+  "group",
+  "project",
+  "select",
+  "union"
+ ],
+ "SPIDER_train_6601": [
+  "project",
+  "select"
+ ],
+ "SPIDER_train_6602": [
+  "discard",
+  "filter",
+  "group",
+  "project",
+  "select",
+  "union"
+ ],
+ "SPIDER_train_6604": [
+  "aggregate",
+  "filter",
+  "project",
+  "select",
+  "union"
+ ],
+ "SPIDER_train_6605": [
+  "group",
+  "select",
+  "union"
+ ],
+ "SPIDER_train_6606": [
+  "comparative",
+  "group",
+  "intersection",
+  "project",
+  "select"
+ ],
+ "SPIDER_train_6607": [
+  "discard",
+  "filter",
+  "select"
+ ],
+ "SPIDER_train_6608": [
+  "group",
+  "select",
+  "superlative"
+ ],
+ "SPIDER_train_6609": [
+  "project",
+  "select",
+  "union"
+ ],
+ "SPIDER_train_6610": [
+  "aggregate",
+  "select"
+ ],
+ "SPIDER_train_6611": [
+  "project",
+  "select",
+  "sort",
+  "union"
+ ],
+ "SPIDER_train_6612": [
+  "group",
+  "project",
+  "select",
+  "union"
+ ],
+ "SPIDER_train_6613": [
+  "project",
+  "select",
+  "union"
+ ],
+ "SPIDER_train_6614": [
+  "filter",
+  "project",
+  "select",
+  "sort",
+  "union"
+ ],
+ "SPIDER_train_6615": [
+  "group",
+  "project",
+  "select",
+  "superlative"
+ ],
+ "SPIDER_train_6616": [
+  "comparative",
+  "group",
+  "project",
+  "select"
+ ],
+ "SPIDER_train_6617": [
+  "comparative",
+  "group",
+  "project",
+  "select"
+ ],
+ "SPIDER_train_6618": [
+  "filter",
+  "project",
+  "select"
+ ],
+ "SPIDER_train_6619": [
+  "comparative",
+  "intersection",
+  "project",
+  "select"
+ ],
+ "SPIDER_train_6620": [
+  "comparative",
+  "project",
+  "select"
+ ],
+ "SPIDER_train_6621": [
+  "project",
+  "select",
+  "sort"
+ ],
+ "SPIDER_train_747": [
+  "aggregate",
+  "select"
+ ],
+ "SPIDER_train_748": [
+  "aggregate",
+  "select"
+ ],
+ "SPIDER_train_749": [
+  "project",
+  "select",
+  "union"
+ ],
+ "SPIDER_train_750": [
+  "project",
+  "select",
+  "union"
+ ],
+ "SPIDER_train_751": [
+  "filter",
+  "project",
+  "select",
+  "sort",
+  "union"
+ ],
+ "SPIDER_train_752": [
+  "filter",
+  "project",
+  "select",
+  "sort",
+  "union"
+ ],
+ "SPIDER_train_753": [
+  "project",
+  "select",
+  "union"
+ ],
+ "SPIDER_train_754": [
+  "comparative",
+  "project",
+  "select",
+  "union"
+ ],
+ "SPIDER_train_755": [
+  "aggregate",
+  "project",
+  "select",
+  "union"
+ ],
+ "SPIDER_train_756": [
+  "aggregate",
+  "project",
+  "select",
+  "union"
+ ],
+ "SPIDER_train_757": [
+  "aggregate",
+  "comparative",
+  "project",
+  "select",
+  "union"
+ ],
+ "SPIDER_train_758": [
+  "aggregate",
+  "comparative",
+  "project",
+  "select",
+  "union"
+ ],
+ "SPIDER_train_759": [
+  "project",
+  "select"
+ ],
+ "SPIDER_train_760": [
+  "project",
+  "select"
+ ],
+ "SPIDER_train_761": [
+  "aggregate",
+  "select"
+ ],
+ "SPIDER_train_762": [
+  "aggregate",
+  "select"
+ ],
+ "SPIDER_train_763": [
+  "project",
+  "select"
+ ],
+ "SPIDER_train_764": [
+  "project",
+  "select"
+ ],
+ "SPIDER_train_765": [
+  "project",
+  "select",
+  "union"
+ ],
+ "SPIDER_train_766": [
+  "project",
+  "select",
+  "union"
+ ],
+ "SPIDER_train_767": [
+  "group",
+  "project",
+  "select",
+  "union"
+ ],
+ "SPIDER_train_768": [
+  "group",
+  "project",
+  "select",
+  "union"
+ ],
+ "SPIDER_train_769": [
+  "comparative",
+  "group",
+  "project",
+  "select"
+ ],
+ "SPIDER_train_770": [
+  "group",
+  "project",
+  "select",
+  "superlative"
+ ],
+ "SPIDER_train_771": [
+  "comparative",
+  "group",
+  "project",
+  "select"
+ ],
+ "SPIDER_train_772": [
+  "comparative",
+  "group",
+  "project",
+  "select"
+ ],
+ "SPIDER_train_773": [
+  "comparative",
+  "project",
+  "select"
+ ],
+ "SPIDER_train_774": [
+  "comparative",
+  "project",
+  "select"
+ ],
+ "SPIDER_train_775": [
+  "comparative",
+  "group",
+  "project",
+  "select"
+ ],
+ "SPIDER_train_776": [
+  "discard",
+  "filter",
+  "project",
+  "select"
+ ],
+ "SPIDER_train_777": [
+  "comparative",
+  "project",
+  "select",
+  "union"
+ ],
+ "SPIDER_train_778": [
+  "comparative",
+  "project",
+  "select"
+ ],
+ "SPIDER_train_779": [
+  "group",
+  "project",
+  "select",
+  "union"
+ ],
+ "SPIDER_train_780": [
+  "group",
+  "project",
+  "select",
+  "union"
+ ],
+ "SPIDER_train_781": [
+  "group",
+  "project",
+  "select",
+  "superlative"
+ ],
+ "SPIDER_train_782": [
+  "comparative",
+  "group",
+  "project",
+  "select"
+ ],
+ "SPIDER_train_783": [
+  "project",
+  "select",
+  "union"
+ ],
+ "SPIDER_train_784": [
+  "project",
+  "select",
+  "union"
+ ],
+ "SPIDER_train_785": [
+  "filter",
+  "project",
+  "select",
+  "union"
+ ],
+ "SPIDER_train_786": [
+  "comparative",
+  "group",
+  "project",
+  "select",
+  "union"
+ ],
+ "SPIDER_train_787": [
+  "comparative",
+  "intersection",
+  "project",
+  "select"
+ ],
+ "SPIDER_train_788": [
+  "comparative",
+  "group",
+  "intersection",
+  "project",
+  "select"
+ ]
+}

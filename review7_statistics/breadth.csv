@@ -1,0 +1,4 @@
+dataset,requests,sets,groups,most_frequent_set_n,full_hits,prior_hits,fixes,harms,request_acc,set_macro_acc,total_net,best_set_net,best_two_groups_net,group_positive,group_zero,group_negative
+cn,1223,189,602,188,612,509,170,67,50.04088307440719,27.551528230643058,103,14,5,144,400,58
+spider,548,79,35,91,50,16,47,13,9.124087591240876,3.7068095576670506,34,20,8,20,10,5
+confirmation,59,20,8,16,8,2,8,2,13.559322033898304,6.5625,6,6,4,5,2,1

@@ -1,0 +1,28 @@
+# Rebuild the aligned public training records
+
+This directory contains source locators and checksums, the exact ordered IDs for each role, the annotation/normalization implementation, and the observed label dictionaries and registration support/co-occurrence counts. It contains no utterances, SQL programs or model weights. Obtain the four training archives listed in `sources.json` from their publishers. Save the downloaded bytes using the names in that file. The original public dataset licences apply.
+
+With Python 3.13, pandas 2.3.1, pyarrow 23.0.1, NumPy 2.2.1 and sqlglot 26.16.4, run:
+
+```
+python rebuild.py /path/to/downloads /path/to/rebuilt --evidence /path/to/paired-evidence.zip
+```
+
+The output consists of local per-role JSONL files, one row per ID in `roles.json`, containing normalized text, group and old labels. The register, evaluation and confirmation outputs also include new labels for verification. For a blind scoring implementation keep evaluation labels in a separate file and pass only query text to the model. The original predictions were sealed before outcome comparisons. The validation invocation above checked the ID, group and entire target set of every one of the 4,711 main-cohort prediction rows. Both original registration sets and the new 189 Spider target sets were also compared separately with the archived experiment records. Query label names, database IDs, SQL and utterance metadata were never model input.
+
+## Data construction
+
+* **CrossWOZ.** The archive contains 42,346 user turns. Only the CFPL files named `train.json` for CrossWOZ were used. Concatenating each recorded character sequence produced 56,161 appearances and 8,042 distinct utterances. Exact raw Unicode matching found no source utterance for 625, found multiple source turns for 412, and found multiple candidate domain/target pairs for one further utterance. This left 7,004 unique aligned turns. The old vocabulary contains distinct ordered (act, domain, slot) triples; slot values are omitted. The target is the sorted set of CFPL intent labels.
+* Before the initial CrossWOZ experiment, previously used dialogues and their normalized texts were excluded (7,004 to 5,786). Two more rows had blank or conflicting normalized text. The preregistration hash is SHA-256 of the compact UTF-8 JSON array `[20261121,"CrossWOZ",dialogue_id]` with literal Unicode. A first hexadecimal digit below 8 assigned a dialogue to the registration side. There were 3,040 eligible registration turns and 2,744 evaluation turns. The registration pool kept at most five distinct dialogues per old set, in SHA-256 order of the compact array `[20261121,"row",id]`, leaving 1,340. The first 75 in SHA-256 order of UTF-8 `inherit-v1` immediately followed by the ID furnished the original registration. Fixed role manifests capture the original project exclusions without redistributing excluded users' requests.
+* The original CrossWOZ history pool excluded 2,231 dialogues, dropped 1,083 exact-overlap/blank rows, 53 inconsistent normalized text groups and 336 trigram near-duplicate candidates. Among 20,892 eligible candidates it took 8,192 from 2,616 dialogues, ranking by SHA-256 of UTF-8 `historical-atoms-v1|` plus ID. Exact history membership is supplied. The history, registration and evaluation group sets are disjoint.
+* **Spider to BREAK.** Join the official training source's zero-based row index to the integer suffix of each `SPIDER_train_` ID, requiring a single BREAK row and exact question text. There were 7,000 Spider rows and 6,955 matching-prefix BREAK rows. The published filter removed 26 with invalid/missing target operators, then all four rows in normalized duplicate-question groups, leaving 6,925. The SQL parser and accepted SQL/operator inventories are explicit in `rebuild.py`. Target sets discard multiplicity and order. Sort databases by SHA-256 of UTF-8 `spider-break-v1|db|` plus database ID; zero-based positions modulo four 0/1, 2, 3 assign history, registration and evaluation. Within each role order by SHA-256 of `spider-break-v1|id|` plus question ID. The corresponding populations were 3,147/1,811/1,967. Take 2,048/75/all respectively. The eight databases without a single retained history, registration or evaluation row supply the separate 189-question confirmation. The original preparatory source scan did inspect format and eligibility for all 140 databases.
+
+## Encoder
+
+Use the fixed Hugging Face weights and tokenizer files listed by SHA-256 in `sources.json`. The cached hardware/software run used torch 2.7.0+cu128 and transformers 4.57.6. For example, from the rebuilt Spider split:
+
+```
+python encoder.py /path/to/weights spider-vectors.npz rebuilt/spider_history.jsonl rebuilt/spider_register.jsonl rebuilt/spider_query.jsonl
+```
+
+Each question is NFKC-normalized, case-folded and whitespace-collapsed. The encoder receives no prompt. It batches by text length (64 rows), pads left, truncates at 512 tokens, takes the final non-padding token, converts to float32 and normalizes by its Euclidean norm. With this command the rebuilt 4,090 × 1,024 original Spider vectors on the project hardware matched every element of the prior cache (maximum absolute difference 0). Other accelerator kernels and batch shapes may introduce rounding differences. The original Chinese cache batched distinct strings jointly with an auxiliary English task; a separate Chinese run on the requested roles implements the same embedding recipe but does not guarantee bitwise replay of that historical batching. For exact scoring replication, use the frozen numerical evidence accompanying the revision. No model needs to be fitted to reproduce this data alignment.
