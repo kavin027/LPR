@@ -1,0 +1,3 @@
+task,id,labels
+spider,SPIDER_train_3743,aggregate|arithmetic|filter|select
+spider,SPIDER_train_3845,arithmetic|select

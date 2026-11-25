@@ -1,0 +1,11 @@
+task,weight,hits,selected
+cn,1.0,49,False
+cn,0.5,53,False
+cn,2.0,47,False
+cn,0.25,54,True
+cn,0.0,40,False
+spider,1.0,19,True
+spider,0.5,18,False
+spider,2.0,17,False
+spider,0.25,16,False
+spider,0.0,13,False

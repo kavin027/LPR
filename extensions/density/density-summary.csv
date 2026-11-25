@@ -1,0 +1,5 @@
+task,shape,alpha,cohort,n,correct,acc
+cn,diagonal,1.0,all,2744,1995,72.70408163265306
+cn,diagonal,1.0,unseen,1223,692,56.58217497955847
+spider,full,0.5,all,1967,504,25.622775800711743
+spider,full,0.5,unseen,548,49,8.94160583941606

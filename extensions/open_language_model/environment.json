@@ -1,0 +1,19 @@
+{
+  "primary_8b": {
+    "model": "Qwen3-8B-Q4_K_M",
+    "runtime": "llama.cpp build 10621 CUDA",
+    "gpu": "RTX 5070 Laptop, 8151 MiB",
+    "offload": "all layers",
+    "slots": 4,
+    "context_per_slot": 1536,
+    "seed": 251121,
+    "generation_token_cap": 24,
+    "temperature": 0,
+    "cpu_helper_threads": 2,
+    "cache_type": "FP16 for keys and values",
+    "wall_seconds_first_16": {
+      "CrossWOZ": 10.8531,
+      "SpiderOps": 14.4287
+    }
+  }
+}

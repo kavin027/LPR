@@ -1,0 +1,5 @@
+task,scope,n,both,mapping_only_correct,primary_only_correct,neither,oracle_hits,oracle_accuracy
+cn,all,2744,1134,39,950,621,2123,77.36880466472303
+cn,unseen,1223,319,22,401,481,742,60.670482420278006
+spider,all,1967,158,179,346,1284,683,34.72292831723437
+spider,unseen,548,19,39,30,460,88,16.05839416058394
