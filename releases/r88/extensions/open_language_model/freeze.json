@@ -1,0 +1,16 @@
+{
+  "model": "Qwen3-8B-Q4_K_M.gguf",
+  "model_bytes": 5027783488,
+  "model_sha256": "d98cdcbd03e17ce47681435b5150e34c1417f50b5c0019dd560e4882c5745785",
+  "seals": {
+    "cn": {
+      "n": 2744,
+      "ordered_prompts_sha256": "d4f709854747beb732156ca24d5525bb268bb350e0a470f70397f9cd96d85730"
+    },
+    "spider": {
+      "n": 1967,
+      "ordered_prompts_sha256": "add8b3f1a03316d0294628324f33f99f910ef421e182329261013217dc6da7d5"
+    }
+  },
+  "protocol_sha256": "5fc5c5ee952efb05537afcd956eb9a5e81939e563424d2a181bdf0d39702102c"
+}

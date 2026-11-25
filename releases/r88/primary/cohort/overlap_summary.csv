@@ -1,0 +1,7 @@
+task,cohort,draws,mean_n,mean_unsupported_in_draw,mean_gain_pp
+cn,both,20,612.55,0,6.360419006038715
+cn,original_only,20,610.45,3.15,12.524077592940039
+cn,draw_only,20,381.5,0,9.712934117181792
+spider,both,20,260.9,0,-0.20770411608049824
+spider,original_only,20,287.1,7.3,10.256569322992876
+spider,draw_only,20,156.75,0,2.0370157146915324

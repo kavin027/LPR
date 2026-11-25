@@ -1,0 +1,16 @@
+# Neural reselection replay
+
+The compact module (Python, NumPy and pandas) starts from out-of-fold and evaluation-set prediction grids for three random seeds on the original registry and for two independently drawn registries with the primary seed. It recomputes fold-mask accuracy for all five multipliers; it selects Full, Row and ECP independently and reports exact-set accuracy and paired gains. Taken together the design has ten task/registry/seed configurations. The two primary configurations reuse their original OOF logits; the other eight required 40 new, group-isolated neural fits. Alternative registries were fixed to cap-enriched draws 1 and 2 on CrossWOZ and uniform draws 1 and 2 on SpiderOps, as in the earlier transfer experiment.
+
+    python -B compact/verify.py
+
+The registered groups and all original query IDs are checked at scoring. Pass --reference MAIN_COMPACT to verify.py to require the three numerical comparisons with the earlier compact archive. When the primary replay's cal/, seeds/ and stats/ directories are siblings of the compact neural module, the compact test also checks the older unit-weight or transferred masks against the pre-existing prediction ledgers. Confidence intervals condition on registry and training seed and resample dialogues or databases in pairs. Alternative seed and registry runs reuse the task's development requests.
+
+Feature-level replay takes the full historic archive, the public raw-data builder with sources.json, its four hash-matched published source files, the original BERT checkpoint directory, the archived registration redraw script and the earlier two full-fit seed logits. All neural parameters, training duration and tokenization follow the original environment. CPU ridge and covariance fits use the original redraw scorer. Fit training folds and score them with:
+
+    python -B fit.py HISTORICAL_R81 RAW_REBUILD_CODE RAW_FILES BERT_CHECKPOINT fresh_oof
+    python -B score.py HISTORICAL_R81 ARCHIVED_REDRAW_PY EXTRA_SEED_DIRECTORY fresh_oof recomputed
+
+BERT_CHECKPOINT is google-bert/bert-base-multilingual-uncased with model.safetensors digest b33adb2b700b7029a64a4a14ddec6bda8555d2ca879e80a75789fd9542a6290e. EXTRA_SEED_DIRECTORY can point to the primary compact replay’s stats/inputs directory. Alternatively, the two earlier seed-logit subdirectories may be named 251122/ and 251123/, each with cn_logits.npz and spider_logits.npz. The original fold logits and original/alternative registry full-fit query logits are read from HISTORICAL_R81. The bundled new OOF logits can substitute for fresh_oof in the second command to reproduce all selections and query scores without GPU training. The complete fit needs PyTorch 2.7.0+cu128, transformers 4.57.6, CUDA and the existing raw-rebuild Python dependencies (including pandas, pyarrow and sqlglot). Score.py requires NumPy, pandas, SciPy, scikit-learn and threadpoolctl. The numerical check uses the five grid values in their fixed tie order.
+
+Every OOF score shard records its training IDs, held-out IDs, target label order, training seed and raw logits. No development-query annotation enters the 40 new neural fits. The compact query masks and registry masks can also be compared key by key with the feature-level output via numpy.testing.assert_array_equal.

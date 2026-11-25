@@ -1,0 +1,3 @@
+# Frozen candidate-budget sensitivity
+
+Evaluate K in {1,3,5,7} on the full original SpiderOps query cohort and its pre-existing strata. Use the unchanged registry, historical Forward, primary DVLC logits, pooled covariance, and the original K=5 registry-selected inverse weight (0.5). Use the same trained scores for every K. Each list contains all registered label sets plus all flips of the K least certain labels around the Forward thresholded prediction. Reuse the original candidate order and stable tie handling. Evaluate list coverage, accuracy and mean list size; make no selection or tuning of K from any results.

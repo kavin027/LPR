@@ -1,0 +1,9 @@
+# Registry sensitivity replay
+
+Run `python verify.py` and `python perturb.py` with NumPy and pandas. Both compare recalculated values against the shipped CSV files. `python render.py` regenerates the supplementary tables.
+
+The standalone NPZ inputs are exact copies of the r87 compact redraw grids for the two tasks. The neural NPZ inputs are the ten r87 compact DVLC grids. They include the group IDs, exact target masks, fold-held-out registration predictions and query predictions at every grid weight. Each registration fold excludes its held-out groups. The replay checks disjointness, the inherited tie order, and that all three scorers have identical predictions at zero weight. The target score to which a zero term is added is Forward (standalone) or Base + Forward (DVLC).
+
+`per_fit.csv` lists every gain against ECP, Row, the zero-weight reference and transferred Full, including both prediction counts and fixes/harms. `summary.csv` stratifies by sampling policy in the standalone experiment and by training-seed or replacement-registry series in the DVLC experiment. The neural experiment has ten completed fits. The original-registry runs vary training seeds, so interpreting all ten as independent redraws would be incorrect. The 40 additional DVLC training folds fitted the two added seeds and two replacement registries per task. For the two replacement draws per task the target cohorts are draw-specific.
+
+`perturbations.csv` reports two paired perturbation analyses of freshly selected versus transferred Full. One keeps the entire panel of fits fixed and perturbs the query groups. The other also resamples the observed fit indices separately within each of the two registry sampling policies. Neither perturbs the source data that generated the registry pool. The ranges in the supplement therefore apply conditionally to this replay. Scores, folds, query groups, model training and selected coefficients are inherited from r87.

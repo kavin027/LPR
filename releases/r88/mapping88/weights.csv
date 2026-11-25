@@ -1,0 +1,5 @@
+task,procedure,beta,alpha,registry_hits,tied_joint_maxima
+cn,joint,0.0,0.25,55,1
+cn,sequential,0.5,0.25,52,1
+spider,joint,0.25,0.5,17,2
+spider,sequential,1.0,0.0,16,2

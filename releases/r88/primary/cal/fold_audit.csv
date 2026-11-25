@@ -1,0 +1,11 @@
+task,fold,train,held,train_groups,held_groups,target_atoms,registered_old_labels,supported_held
+cn,0,60,15,59,14,16,50,15
+cn,1,60,15,59,14,16,55,15
+cn,2,60,15,58,15,16,53,15
+cn,3,60,15,58,15,16,53,15
+cn,4,60,15,58,15,16,52,15
+spider,0,60,15,22,5,11,25,15
+spider,1,60,15,22,5,11,27,15
+spider,2,60,15,22,5,11,25,15
+spider,3,60,15,21,6,11,26,15
+spider,4,60,15,21,6,11,26,15

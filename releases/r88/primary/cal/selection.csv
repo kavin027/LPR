@@ -1,0 +1,17 @@
+task,method,alpha,hits,n,priority
+cn,bf,1.0,39,75,0
+cn,conditional,0.5,46,75,1
+cn,ecp,1.0,44,75,0
+cn,full,0.25,55,75,3
+cn,gaussian,0.25,43,75,3
+cn,row,0.25,48,75,3
+cn,unary,0.25,49,75,3
+cn,unary_count,0.25,49,75,3
+spider,bf,1.0,16,75,0
+spider,conditional,0.25,16,75,3
+spider,ecp,0.5,16,75,1
+spider,full,0.5,17,75,1
+spider,gaussian,0.5,19,75,1
+spider,row,0.5,17,75,1
+spider,unary,0.0,16,75,4
+spider,unary_count,0.0,16,75,4

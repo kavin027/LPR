@@ -1,0 +1,3 @@
+# Historical label-permutation control
+
+Keep the supervised lexical Forward features, all proposed sets and the base scores fixed. Compare a profile fitted to supervised character-model outputs with one fitted to a model using a fixed permutation of complete historical label rows. The permutation preserves marginal frequencies and co-occurrences and breaks the link to the associated historical text. Run the same registry-only weight selection for each profile. The released definitions, five-fold hit counts and query-level masks fix each comparison regardless of performance. A single permutation illustrates this control and does not characterize a null distribution. The same module recomputes the other paired comparisons used in the robustness table.

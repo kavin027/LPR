@@ -1,0 +1,7 @@
+# Offline external registration calibration
+
+The held-out registry neural scores and all 4,711 test decisions use the original adapted component for each model. A single seed is used per protocol. Registry training or demonstration selection sees 60 rows in each fold, and scores the remaining 15. The original, sealed test scores from the full 75-example fit are reused. No evaluation label enters model training, the ten held-out folds, or weight selection.
+
+From an unpacked main package with bases/ and the module at ext-cal/, run `python -B ext-cal/verify.py --reference MAIN_REPLAY` to check the complete registry grid, selected weights, historical unit-weight/zero-weight decisions, and paired outcomes. The full replay additionally permits recomputing the registration models using the original cached snapshots without creating or saving another checkpoint. See feature-rebuild/ext-cal/README.md at the root of this supplement.
+
+The numerical package also contains the sealed original candidate-score arrays, the ten registration score files per method, and fold ID/label metadata. Its default verifier rebuilds both complete grids directly from these numeric scores before checking the tables. The masks in roles/ and scores/ are local to each fold's training vocabulary; their global ID and original ordering are checked against the folded common score. This replay needs neither the original model weights nor the raw request text.

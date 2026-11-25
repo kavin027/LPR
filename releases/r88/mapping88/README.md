@@ -1,0 +1,7 @@
+# Mapping and inverse sensitivity replay
+
+Run `python verify.py` in this folder with NumPy and pandas. The script checks every registration-grid count, ties, chosen weights, query decision, correctness overlap and group-paired interval against the saved outputs. A zero component reproduces the corresponding reduced scoring rule. `protocol.txt` records the retrospective selection procedure.
+
+The two NPZ inputs store original ordered candidate masks and offsets, unscaled candidate scores J, M and I, held-out registration labels, evaluation labels and original query outputs. In each file registration and evaluation rows are disjoint arrays. These files were derived from the original primary DVLC compact replay. To reproduce them from that upstream artifact, run `python rebuild.py PATH_TO_EXTRACTED_R87_REPLAY`. The builder refits the A-to-B mappings, checks the stored atom-mask alignment and group disjointness, and combines the original base logits, Forward logits and inverse coefficients. No evaluation label enters the folds or the selection. Run `python verify.py` again after rebuilding.
+
+The complete 25-cell held-out grid for each task is in `grid.csv`; `weights.csv` gives selected settings; `paired.csv` and `overlap.csv` give query results; `decisions.csv.gz` contains all 4,711 paired decisions. Paired intervals reuse the original 2,000 whole-dialogue or whole-database bootstrap draws, seed 251121, for each fixed query cohort. They condition on the single registry of each task.
